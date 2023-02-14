@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New blank page</title>
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#fafafa">
+  <meta charset="utf-8">
+  <meta author="blank.page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple text editor designed for creative writing.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Start writing">
+  <meta property="og:url" content="https://blank.page">
+  <meta property="og:image" content="https://blank.page/ogimage.png">
+  <meta property="og:description" content="Start writing...">
+  <meta property="article:author" content="Blank Page">
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" data-type="empty" href="data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2220%22%20viewBox%3D%220%200%2016%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%3Cstyle%3E%0D%0A%20%20%20%20path%20%7B%20fill%3A%20%23000000%3B%20%7D%0D%0A%20%20%20%20%40media%20%28prefers-color-scheme%3A%20dark%29%20%7B%0D%0A%20%20%20%20%20%20path%20%7B%20fill%3A%20%23ffffff%3B%20%7D%0D%0A%20%20%20%20%7D%0D%0A%20%20%3C%2Fstyle%3E%0D%0A%3Cpath%20d%3D%22M10%200H2C0.9%200%200%200.9%200%202V18C0%2019.1%200.89%2020%201.99%2020H14C15.1%2020%2016%2019.1%2016%2018V6L10%200ZM14%2018H2V2H9V7H14V18Z%22%2F%3E%0D%0A%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="css/blank.page-all.css">
+
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+ </head>
+
+<body lang="en" class="loading empty">
+
+  <div id="page" class="page">
+    <div id="page-ui" class="page-ui">
+
+      <!-- page title -->
+      <div class="page-title" id="page-title">
+        <svg width="16" height="20" viewbox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM14 18H2V2H9V7H14V18Z" class="icon-editor"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewbox="0 0 24 24" fill="none" class="icon-reader"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+        <span class="page-title-txt"></span>
+      </div>
+
+      <!-- page header -->
+      <header id="page-header">
+        <div class="header-icons">
+          <div id="configure" class="configure header-icon" aria-label="Configure" title="Configure">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 9L20.25 6.25L23 5L20.25 3.75L19 1L17.75 3.75L15 5L17.75 6.25L19 9Z"></path>
+              <path d="M19 15L17.75 17.75L15 19L17.75 20.25L19 23L20.25 20.25L23 19L20.25 17.75L19 15Z"></path>
+              <path d="M11.5 9.5L9 4L6.5 9.5L1 12L6.5 14.5L9 20L11.5 14.5L17 12L11.5 9.5ZM9.99 12.99L9 15.17L8.01 12.99L5.83 12L8.01 11.01L9 8.83L9.99 11.01L12.17 12L9.99 12.99Z"></path>
+            </svg>
+          </div>
+          <div id="spellcheck" class="spellcheck header-icon" aria-label="Spellcheck" title="Spellcheck">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M12.45 16h2.09L9.43 3H7.57L2.46 16h2.09l1.12-3h5.64l1.14 3zm-6.02-5L8.5 5.48 10.57 11H6.43zm15.16.59l-8.09 8.09L9.83 16l-1.41 1.41 5.09 5.09L23 13l-1.41-1.41z"></path></svg>
+          </div>
+          <div id="markdown" class="markdown header-icon" aria-label="Preview" title="Preview">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+          </div>
+          <div id="contrast" class="contrast header-icon" aria-label="White on Black" title="Switch theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path></svg>
+          </div>
+          <div id="fullscreen" class="fullscreen header-icon" aria-label="Full screen" title="Full screen">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 32 32" class="enter-fullscreen"><path d="M21.8 4h4.96c.68 0 1.24.56 1.24 1.24v4.97a1.24 1.24 0 1 1-2.48 0V8.24l-6.16 6.15a1.24 1.24 0 1 1-1.75-1.75l6.15-6.16H21.8a1.24 1.24 0 1 1 0-2.48zm-9.16 13.6a1.24 1.24 0 0 1 2.02.4c.2.47.1 1-.26 1.36l-6.16 6.16h1.97a1.24 1.24 0 1 1 0 2.48H5.24C4.56 28 4 27.44 4 26.76v-4.97a1.24 1.24 0 1 1 2.48 0v1.97l6.16-6.16z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="-4 -2 28 28" class="exit-fullscreen"><path d="M1.22 24c.33 0 .64-.13.87-.36l6.05-6.05v1.93a1.22 1.22 0 0 0 2.44 0v-4.88c0-.68-.54-1.22-1.22-1.22H4.48a1.22 1.22 0 1 0 0 2.44h1.94L.36 21.92A1.22 1.22 0 0 0 1.22 24zm13.03-13.03h4.88a1.22 1.22 0 1 0 0-2.44H17.2l6.06-6.06A1.22 1.22 0 1 0 21.53.75L15.47 6.8V4.87a1.22 1.22 0 1 0-2.44 0v4.88c0 .68.54 1.22 1.22 1.22z"></path></svg>
+          </div>
+
+        </div>  
+      </header>
+
+
+
+      <!-- page footer -->
+      <div class="footer-actions">
+        <div class="flex">
+          <div id="counter" class="counter button text">
+            
+          </div>
+          <div id="copy" class="button text"></div>
+          <div id="download" class="button text"></div>
+          <div id="author" class="text reader-only"></div>
+          <div id="submit" class="submit button accent disabled hidden"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="progress" class="progress-bars"></div>
+    
+    <input type="file" name="open" accept="text/plain" id="open">
+
+    <div class="skeleton">
+      <div class="container">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div> <!-- /app -->
+  <div id="flash" class="flash"></div>
+  <script defer data-domain="blank.page" src="js/js-plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <script src="js/9870--all.js"></script></body></html>
